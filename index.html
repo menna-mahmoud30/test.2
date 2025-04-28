@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحة تسجيل الدخول">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" required>
+
+            <!-- Checkboxes -->
+            <div class="checkboxes">
+                <label>اهتماماتك:</label><br>
+                <input type="checkbox" id="reading" name="interest" value="reading">
+                <label for="reading">القراءة</label><br>
+
+                <input type="checkbox" id="sports" name="interest" value="sports">
+                <label for="sports">الرياضة</label><br>
+
+                <input type="checkbox" id="travel" name="interest" value="travel">
+                <label for="travel">السفر</label><br>
+            </div>
+
+            <!-- Radio buttons -->
+            <div class="radio-buttons">
+                <label>الجنس:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">ذكر</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">أنثى</label><br>
+            </div>
+
+            <!-- Dropdown list -->
+            <div class="dropdown">
+                <label for="country">اختر بلدك:</label><br>
+                <select id="country" name="country" required>
+                    <option value="" selected disabled>اختر...</option>
+                    <option value="egypt">مصر</option>
+                    <option value="ksa">السعودية</option>
+                    <option value="uae">الإمارات</option>
+                    <option value="other">دولة أخرى</option>
+                </select>
+            </div>
+
+            <br>
+            <button type="submit">دخول</button>
+        </form>
+        <p id="error-msg" class="error-msg"></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault();
+            
+            // بيانات تسجيل الدخول الصحيحة
+            const correctUsername = "menna";
+            const correctPassword = "1234";
+            
+            // جلب القيم من الحقول
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // التحقق من البيانات
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = "webb.html";  // ينقلك لصفحة Task1 بعد التحقق
+            } else {
+                document.getElementById('error-msg').innerText = "اسم المستخدم أو كلمة المرور غير صحيحة!";
+            }
+        }
+    </script>
+
+</body>
+</html>

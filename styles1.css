@@ -1,0 +1,90 @@
+/* خلفية الصفحة */
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* الحاوية الرئيسية */
+.login-container {
+    background: #ffffffd9;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* العنوان */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* تسميات الحقول */
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #555;
+    text-align: right;
+}
+
+/* الحقول النصية والقوائم */
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* الأزرار */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* تأثير تمرير الماوس على الزر */
+.login-container button:hover {
+    background-color: #5548c8;
+}
+
+/* رسالة الخطأ */
+.error-msg {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* الأقسام الإضافية (checkboxes, radio buttons) */
+.checkboxes, .radio-buttons, .dropdown {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* تنسيق checkboxes و radio */
+.checkboxes input,
+.radio-buttons input {
+    margin-left: 5px;
+}
+
+/* تحسين شكل القائمة المنسدلة */
+.dropdown select {
+    background-color: #f9f9f9;
+}

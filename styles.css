@@ -1,0 +1,229 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    direction: rtl;
+}
+
+/* الهيدر */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* الأقسام */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* الفقرات */
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* الصور */
+section img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* الفيديو */
+video {
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+/* القوائم */
+ul {
+    text-align: right;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul li ul {
+    margin-right: 20px;
+}
+
+ul li ul li {
+    font-size: 16px;
+    color: #666;
+}
+
+/* رابط يتم الضغط عليه */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #applications {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #applications h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #applications p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 20px;
+    padding: 20px;
+    direction: rtl;
+  }
+  
+  #ai-in-geography {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #ai-in-geography h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #e0e0e0;
+  }
+  
+  th {
+    font-size: 20px;
+    color: #222;
+  }
+  
+  td {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
